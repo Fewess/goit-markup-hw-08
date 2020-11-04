@@ -88,15 +88,6 @@
     border-radius: 2px;
   }
 
-  //   @media screen and (max-width: 767px) {
-  //     bottom: -9px;
-  //   }
-
-  //   @media screen and (min-width: 768px) {
-  //     bottom: -9%;
-  //   }
-  // }
-
   .navigation-list-item:not(:last-child) {
     @media screen and (max-width: 767px) {
       padding-bottom: 40px;
@@ -164,10 +155,6 @@
 
   .address-svg {
     fill: #757575;
-  }
-
-  .navigation {
-    z-index: 100;
   }
 
   .navigation {

@@ -264,10 +264,6 @@ img {
   fill: #757575;
 }
 
-.active .navigation {
-  z-index: 100;
-}
-
 @media screen and (min-width: 768px) {
   .active .navigation {
     display: flex;

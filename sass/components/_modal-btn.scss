@@ -16,4 +16,9 @@
   margin-bottom: 200px;
   border: none;
   cursor: pointer;
+  margin-bottom: 118px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 90px;
+  }
 }
