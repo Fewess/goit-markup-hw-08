@@ -1,8 +1,6 @@
 .antenna::before {
   display: block;
   content: '';
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   background-image: url(../images/features/antenna.svg);
   background-repeat: no-repeat;
@@ -10,11 +8,35 @@
   background-size: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .antenna::before {
+    width: 450px;
+    height: 120px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .antenna::before {
+    width: 354px;
+    height: 120px;
+    margin-right: 30px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .antenna::before {
+    width: 270px;
+    height: 120px;
+    margin-top: 94px;
+    margin-right: 30px;
+  }
+}
+
 .clock::before {
   display: block;
   content: '';
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   background-image: url(../images/features/clock.svg);
   background-repeat: no-repeat;
@@ -22,11 +44,34 @@
   background-size: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .clock::before {
+    width: 450px;
+    height: 120px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clock::before {
+    width: 354px;
+    height: 120px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clock::before {
+    width: 270px;
+    height: 120px;
+    margin-top: 94px;
+    margin-right: 30px;
+  }
+}
+
 .diagram::before {
   display: block;
   content: '';
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   background-image: url(../images/features/diagram.svg);
   background-repeat: no-repeat;
@@ -34,11 +79,35 @@
   background-size: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .diagram::before {
+    width: 450px;
+    height: 120px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .diagram::before {
+    width: 354px;
+    height: 120px;
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .diagram::before {
+    width: 270px;
+    height: 120px;
+    margin-top: 94px;
+    margin-right: 30px;
+  }
+}
+
 .astronaut::before {
   display: block;
   content: '';
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   background-image: url(../images/features/astronaut.svg);
   background-repeat: no-repeat;
@@ -46,13 +115,34 @@
   background-size: 70px;
 }
 
-.features-list {
-  display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .astronaut::before {
+    width: 450px;
+    height: 120px;
+    margin-top: 30px;
+  }
+}
 
-  &-item:not(:last-child) {
-    margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .astronaut::before {
+    width: 354px;
+    height: 120px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .astronaut::before {
+    width: 270px;
+    height: 120px;
+    margin-top: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -66,10 +156,28 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .features-title {
+    text-align: center;
+  }
+}
+
 .features-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .features-description {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-description {
+    width: 270px;
+  }
 }
