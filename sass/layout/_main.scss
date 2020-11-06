@@ -1,5 +1,6 @@
 .main {
   background-color: #2f303a;
+  min-width: 480px;
 
   @media screen and (max-width: 768px) {
     background-image: linear-gradient(

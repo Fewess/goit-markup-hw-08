@@ -267,6 +267,7 @@ img {
 
 .header {
   position: relative;
+  min-width: 480px;
 }
 
 .logo {
@@ -567,6 +568,7 @@ img {
 
 .main {
   background-color: #2f303a;
+  min-width: 480px;
 }
 
 @media screen and (max-width: 768px) {
@@ -906,6 +908,7 @@ img {
 .team {
   background-color: #f5f4fa;
   padding-bottom: 60px;
+  min-width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1061,19 +1064,50 @@ img {
   background-color: #2196f3;
 }
 
+.clients .container {
+  min-width: 480px;
+}
+
+.clients-title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+    line-height: 1.166;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+}
+
 .clients-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    margin-bottom: 94px;
+  }
 }
 
 .clients-list-link {
   display: flex;
-  width: 170px;
   height: 90px;
   justify-content: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 4%;
   border: 1px solid;
   border-color: #afb1b8;
@@ -1087,15 +1121,40 @@ img {
   outline: none;
 }
 
-.clients-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.166;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  color: #212121;
+@media screen and (max-width: 767px) {
+  .clients-list-link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-link {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-item {
+    margin-bottom: 0;
+  }
 }
 
 .footer {
