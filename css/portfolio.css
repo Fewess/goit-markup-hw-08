@@ -473,32 +473,57 @@ img {
 
 .footer {
   background-color: #2f303a;
-  margin-top: 94px;
-}
-
-.footer-container {
-  display: flex;
-}
-
-.footer .container-portfolio {
-  margin-top: 94px;
+  min-width: 480px;
 }
 
 .footer .logo {
-  display: flex;
-  padding-top: 60px;
+  text-align: center;
+  margin-top: 60px;
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
-.footer-list-link:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (min-width: 768px) {
+  .footer .logo {
+    margin-left: 33px;
+  }
 }
 
-.footer-list-link-last {
-  padding-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .footer .logo {
+    font-size: 26px;
+    line-height: 1.192;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-list {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .address-list {
+    padding-left: 76px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .address-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
 }
 
 .contact-address-link {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -506,9 +531,48 @@ img {
   color: #ffffff;
 }
 
+.footer-list-link {
+  margin-bottom: 8px;
+}
+
+.footer .contact-mail-link,
+.footer .contact-tel-link {
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .contact-mail-link,
+  .footer .contact-tel-link {
+    margin-left: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .contact-mail-link,
+  .footer .contact-tel-link {
+    margin-left: 0;
+  }
+}
+
 .list-dark {
-  margin-left: 60px;
-  margin-right: 93px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .list-dark {
+    margin-top: 65px;
+    margin-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-dark {
+    margin-top: 92px;
+    margin-right: 94px;
+    margin-left: 69px;
+    text-align: start;
+  }
 }
 
 .dark-title {
@@ -518,7 +582,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 72px;
+  margin-bottom: 20px;
 }
 
 .social-list-dark {
@@ -526,6 +590,7 @@ img {
   justify-content: space-between;
   width: 206px;
   margin-top: 20px;
+  margin: 0 auto;
 }
 
 .social-item-dark {
@@ -553,12 +618,23 @@ img {
 }
 
 .mailing-wrapper {
-  width: 570px;
-  height: 86px;
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer-form {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .mailing-wrapper {
+    margin-left: 166px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-wrapper {
+    text-align: start;
+    margin-top: 92px;
+    margin-left: 0;
+  }
 }
 
 .form-title {
@@ -568,7 +644,29 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 72px;
+}
+
+.footer-input {
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 15px 16px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
 }
 
 .subscribe-btn {
@@ -588,23 +686,45 @@ img {
   color: #fff;
   fill: #ffffff;
   margin-top: 20px;
-  margin-left: 12px;
+  margin-left: 130px;
   cursor: pointer;
 }
 
-.footer-input {
-  width: 358px;
-  height: 50px;
-  border-radius: 4px;
-  margin-top: 20px;
-  padding: 15px 16px;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+@media screen and (max-width: 767px) {
+  .subscribe-btn {
+    margin-left: 130px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-btn {
+    margin-left: 12px;
+  }
 }
 
 .svg-form-footer {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
