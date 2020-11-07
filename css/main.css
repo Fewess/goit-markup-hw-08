@@ -566,6 +566,15 @@ img {
   fill: #757575;
 }
 
+.header-portfolio::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #ececec;
+  margin-top: 0;
+}
+
 .main {
   background-color: #2f303a;
   min-width: 480px;
