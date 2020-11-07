@@ -364,6 +364,11 @@ img {
   margin-top: 0;
 }
 
+.svg-menu:hover,
+.svg-menu:focus {
+  fill: #2196f3;
+}
+
 .hero {
   min-width: 480px;
 }

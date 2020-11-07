@@ -625,6 +625,11 @@ img {
   margin-top: 0;
 }
 
+.svg-menu:hover,
+.svg-menu:focus {
+  fill: #2196f3;
+}
+
 .main {
   background-color: #2f303a;
   min-width: 480px;
