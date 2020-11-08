@@ -426,6 +426,12 @@ img {
   outline: none;
 }
 
+@media screen and (max-width: 767px) {
+  .hero-list:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
+}
+
 .hero-list-gallery {
   display: flex;
 }
